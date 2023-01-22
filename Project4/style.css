@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Abel", sans-serif;
+}
+.main {
+  height: 100vh;
+  width: 100%;
+  padding: 150px 350px;
+  background-image: linear-gradient(
+    65.9deg,
+    rgba(85, 228, 224, 1) 5.5%,
+    rgba(75, 68, 224, 0.74) 54.2%,
+    rgba(64, 198, 238, 1) 55.2%,
+    rgba(177, 36, 224, 1) 98.4%
+  );
+  background-color: #4158d0;
+}
+.container {
+  background-color: rgb(188, 214, 251);
+  height: 100%;
+  border-radius: 15px;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.children1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.children1 .left {
+  padding: 25px 0;
+  font-size: 30px;
+  width: 90%;
+  text-align: justify;
+}
+.children1 .left p {
+  font-weight: bold;
+}
+.children1 .left span {
+  font-weight: bold;
+  color: blue;
+}
+.children1 .right {
+  height: 100%;
+  padding: 50px 100px;
+  font-size: 20px;
+  color: rgb(130, 133, 131);
+  line-height: 30px;
+  font-weight: 500;
+}
+.children2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 4em 2rem;
+}
+.children2 .card {
+  box-shadow: 0 20px 40px 0 rgba(173, 181, 189, 0.1);
+  margin: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 45px;
+  color: rgb(180, 179, 179);
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 25px;
+}
+.card:first-child::before {
+  content: "";
+  position: absolute;
+  background-color: #5ed291;
+  top: -2px;
+  left: -1px;
+  width: calc(100% + 3px);
+  height: 8px;
+  border-radius: 6px 6px 0 0;
+}
+.card:last-child::before {
+  content: "";
+  position: absolute;
+  background-color: #ef9220;
+  top: -2px;
+  left: -1px;
+  width: calc(100% + 3px);
+  height: 8px;
+  border-radius: 6px 6px 0 0;
+}
+.card:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  background-color: #5745f7;
+  top: -2px;
+  left: -1px;
+  width: calc(100% + 3px);
+  height: 8px;
+  border-radius: 6px 6px 0 0;
+}
+.children2 .card img {
+  width: 250px;
+  height: 250px;
+}
