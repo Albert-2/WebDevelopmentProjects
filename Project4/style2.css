@@ -1,0 +1,121 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.main
+{
+    /* height: 100vh; */
+    border: 2px solid red;
+    padding:1em 0;
+}
+.container
+{
+    margin:0 auto;
+    width: 90%;
+    max-width: 1200px;
+    /* height: 80%; */
+    padding: 0 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+.container .children1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.container .children1 .left
+{
+    width: 45%;
+}
+.container .children1 .left h6{
+    font-size: 1.25em;
+}
+.container .children1 .left p{
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+.container .children1 .left span{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: rgb(50, 50, 244);
+}
+.container .children1 .right
+{
+    width: 50%;
+    align-content: center;
+}
+.container .children1 .right p{
+    margin-top: 2em;
+    line-height: 1.25em;
+    font-size: 1.25rem;
+    color: rgb(139, 126, 126);
+}
+.container .children2
+{
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 4em 2rem;
+    /* height: 55%; */
+}
+@media all and (max-width:1200px) {
+    .container .children2
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+.container .children2 .card
+{
+    font-size: 1.25em;
+    height: 80%;
+    border:2px solid rgb(215, 212, 212);
+    border-radius: 6px;
+    box-shadow: 15px 15px 2px 2px rgba(231, 229, 229, 0.8);
+    text-align: center;
+    padding: 3em;
+    position: relative;
+    margin: 0 2em;
+}
+.card:first-child::before {
+  content: "";
+  position: absolute;
+  background-color: #5ed291;
+  top: -2px;
+  left: -1px;
+  width: calc(100% + 3px);
+  height: 8px;
+  border-radius: 6px 6px 0 0;
+}
+.card:last-child::before {
+  content: "";
+  position: absolute;
+  background-color: #ef9220;
+  top: -2px;
+  left: -1px;
+  width: calc(100% + 3px);
+  height: 8px;
+  border-radius: 6px 6px 0 0;
+}
+.card:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  background-color: #5745f7;
+  top: -2px;
+  left: -1px;
+  width: calc(100% + 3px);
+  height: 8px;
+  border-radius: 6px 6px 0 0;
+}
