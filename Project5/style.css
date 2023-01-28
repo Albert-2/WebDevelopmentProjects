@@ -1,0 +1,90 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: #333;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://images.unsplash.com/photo-1467622234040-7f51f6ae22a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHw%3D&w=1000&q=80');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+}
+h1{
+    font-size: 2.25rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+p{
+    font-size: 1.25em;
+    max-width: 850px;
+    text-align: center;
+    line-height: 1.5rem;
+    padding: 1em;
+}
+a{
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 1.25em;
+    padding: .25em 1.5em;
+    background-color: black;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+.container2
+{
+    background-image: url('https://images.unsplash.com/photo-1533005346585-b131e79eef3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHdha3xlbnwwfHwwfHw%3D&w=1000&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    flex-direction: row;
+    gap: 1.6em;
+}
+.card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+}
+.card > a{
+    margin-bottom:2em ;
+}
+.img{
+    width: 80%;
+    height: 200px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    margin: 8px;
+    transition: all 0.4s ease;
+}
+.img:hover{
+    transform: scale(1.05);
+}
+.img1
+{
+    background-image: url('https://img.freepik.com/premium-photo/people-helping-each-other-hike-up-mountain-sunrise-giving-helping-hand-teamwork-concept_169160-824.jpg?w=2000');
+}
+.img2
+{
+    background-image: url('https://cdn.pixabay.com/photo/2020/01/30/19/53/paraglider-4806383__340.jpg');
+}
+.img3
+{
+    background-image: url('https://www.megeve-tourisme.fr/app/uploads/wpetourisme/676124-diaporama.jpg');
+}
